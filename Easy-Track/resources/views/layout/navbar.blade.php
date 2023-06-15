@@ -98,6 +98,7 @@
           </ul><!-- End Notification Dropdown Items -->
 
         </li><!-- End Notification Nav -->
+        
 
         <li class="nav-item dropdown pe-3">
 
@@ -107,18 +108,29 @@
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
+            {{-- <li class="dropdown-header">
               <h6>Kevin Anderson</h6>
               <span>Web Designer</span>
             </li>
             <li>
               <hr class="dropdown-divider">
-            </li>
+            </li> --}}
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile..blade.php">
+              <a class="dropdown-item d-flex align-items-center" href="{{route('login')}}">
                 <i class="bi bi-person"></i>
-                <span>My Profile</span>
+                <span>Login</span>
+              </a>
+            </li>
+            
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="{{route('register')}}">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span>Registre</span>
               </a>
             </li>
             <li>
@@ -126,31 +138,28 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile..blade.php">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
+              {{-- <a class="dropdown-item d-flex align-items-center" href="pages-faq..blade.php">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Logout</span>
+              </a> --}}
+              <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"
+                            >Logout</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @csrf
+                            </form>
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
 
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq..blade.php">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
+            {{-- <li>
               <a class="dropdown-item d-flex align-items-center" href="#">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
-            </li>
+            </li> --}}
 
           </ul><!-- End Profile Dropdown Items -->
         </li><!-- End Profile Nav -->

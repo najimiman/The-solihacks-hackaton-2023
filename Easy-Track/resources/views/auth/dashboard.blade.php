@@ -14,6 +14,13 @@
                 @else
                     <div class="alert alert-success">
                         You are logged in!
+                        {{-- <script>
+                            setTimeout(function() {
+                                window.location.replace("{{ route('../') }}");
+                            }, 5000); // 5000ms = 5 secondes
+                        </script> --}}
+                        {{-- {{ route('authenticate') }} --}}
+                        {{-- <a href="{{ route('/') }}">Aller au tableau de bord</a> --}}
                     </div>       
                 @endif                
             </div>

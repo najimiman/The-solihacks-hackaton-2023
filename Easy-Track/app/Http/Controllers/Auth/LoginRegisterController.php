@@ -80,7 +80,7 @@ class LoginRegisterController extends Controller
         if(Auth::attempt($credentials))
         {
             $request->session()->regenerate();
-            return redirect()->route('dashboard')
+            return redirect()->route('servicemobile')
                 ->withSuccess('You have successfully logged in!');
         }
 
@@ -99,7 +99,7 @@ class LoginRegisterController extends Controller
     {
         if(Auth::check())
         {
-            return view('auth.dashboard');
+            return view('layout.head');
         }
         
         return redirect()->route('login')
