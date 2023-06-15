@@ -41,7 +41,7 @@
               <div class="card">
 
                 <div class="card-body">
-                  <h5 class="card-title">Service / Service internet adsl & mt duo<span></span></h5>
+                  <h5 class="card-title">Service / Tout Service<span></span></h5>
 
                   {{-- <h5 class="breadcrumb-item active">Service/Service-mobile</h5> --}}
             <!-- Recent Sales -->

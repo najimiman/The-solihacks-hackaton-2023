@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginRegisterController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,10 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/dashboard', 'dashboard')->name('dashboard');
     Route::post('/logout', 'logout')->name('logout');
 });
+Route::resource('Service', ServiceController::class);
+Route::get('toutservice',[ServiceController::class,'index'])->name('toutservice');
+Route::get('servicemobile',[ServiceController::class,'servicemobile'])->name('servicemobile');
+Route::get('servicefix',[ServiceController::class,'servicefix'])->name('servicefix');
+
+Route::get('servicefibreobtique',[ServiceController::class,'servicefibreobtique'])->name('servicefibreobtique');
+Route::get('serviceinternet',[ServiceController::class,'serviceinternet'])->name('serviceinternet');

@@ -14,35 +14,35 @@
 
       <li class="nav-heading">Pages</li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile..blade.php">
+        <a class="nav-link collapsed" href="{{route('toutservice')}}">
           <i class="bi bi-list-task"></i>
           <span>TOUT SERVICE</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile..blade.php">
+        <a class="nav-link collapsed" href="{{route('servicemobile')}}">
           <i class="bi bi-phone"></i>
           <span>SERVICE MOBILE</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq..blade.php">
+        <a class="nav-link collapsed" href="{{route('servicefix')}}">
           <i class="bi bi-telephone"></i>
           <span>SERVICE FIXE</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact..blade.php">
+        <a class="nav-link collapsed" href="{{route('serviceinternet')}}">
           <i class="bi bi-globe"></i>
           <span>SERVICE INTERNET ADSL & MT DUO</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register..blade.php">
+        <a class="nav-link collapsed" href="{{route('servicefibreobtique')}}">
           <i class="bi bi-router"></i>
           <span>SERVICE INTERNET FIBRE OPTIQUE</span>
         </a>
