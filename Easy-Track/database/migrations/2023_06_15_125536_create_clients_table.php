@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("Name");
             $table->string("email");
             $table->string("Adress");
-            $table->bigInteger("numero_telephone");
+            $table->string("numero_telephone");
             $table->string("Cin");
             $table->string("Code_client");
             $table->timestamps();

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->float("prix");
+            $table->string("prix");
             $table->dateTime("Date_abonnement");
             $table->string("nom");
             $table->timestamps();
