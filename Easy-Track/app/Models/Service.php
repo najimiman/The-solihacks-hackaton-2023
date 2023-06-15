@@ -8,9 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Type_abonement extends Model
 {
     use HasFactory;
-    protected $table="type_abonements";
+    protected $table="services";
     protected $fillable =[
         "id",
         "prix",
+        "Date_abonnement",
         "nom"
     ];}

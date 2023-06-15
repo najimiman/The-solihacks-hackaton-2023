@@ -13,7 +13,6 @@ class Client extends Model
         "id",
         "Name",
         "email",
-        "Date_abonnement",
         "Adress",
         "numero_telephone",
         "Cin",

@@ -14,7 +14,7 @@ class Facture extends Model
         "Code_client",
         "Client_id",
         "Date_facture",
-        "type_abonements_id",
+        "services_id",
         "mode_payment_id"
     ];
 }

@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string("Name");
             $table->string("email");
-            $table->dateTime("Date_abonnement");
             $table->string("Adress");
             $table->bigInteger("numero_telephone");
             $table->string("Cin");
