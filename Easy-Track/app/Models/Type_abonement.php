@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Type_abonement extends Model
 {
     use HasFactory;
-}
+    protected $table="type_abonements";
+    protected $fillable =[
+        "id",
+        "prix",
+        "nom"
+    ];}
