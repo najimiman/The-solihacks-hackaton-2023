@@ -19,10 +19,10 @@ return new class extends Migration
             ->references("id")
             ->on('clients')
             ->onDelete('cascade');
-            $table->bigInteger("type_abonements_id")->unsigned()->nullable();
-            $table->foreign("type_abonements_id")
+            $table->bigInteger("services_id")->unsigned()->nullable();
+            $table->foreign("services_id")
             ->references("id")
-            ->on('type_abonements')
+            ->on('services')
             ->onDelete('cascade');
             $table->bigInteger("mode_payment_id")->unsigned()->nullable();
             $table->foreign("mode_payment_id")
